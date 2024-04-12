@@ -10,6 +10,9 @@ describe("a test", () => {
 
     const libStub = await td.replaceEsm("@repro-testdouble-esm/lib");
     td.when(libStub.bar()).thenReturn("haha");
+
+    const tslibStub = await td.replaceEsm("@repro-testdouble-esm/tslib");
+    td.when(tslibStub.bar()).thenReturn("hahaha");
   });
 
   afterEach(() => {
@@ -24,5 +27,10 @@ describe("a test", () => {
   it("should be able to mock an internal library", async () => {
     const { bar } = await import("../src/index");
     expect(bar()).to.equal("haha");
+  });
+
+  it("should be able to mock an internal typescript library", async () => {
+    const { qux } = await import("../src/index");
+    expect(qux()).to.equal("hahaha");
   });
 });

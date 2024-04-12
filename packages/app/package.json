@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@ipld/dag-json": "^10.2.0",
-    "@repro-testdouble-esm/lib": "1.0.0"
+    "@repro-testdouble-esm/lib": "1.0.0",
+    "@repro-testdouble-esm/tslib": "1.0.0"
   }
 }

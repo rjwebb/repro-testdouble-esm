@@ -1,5 +1,5 @@
 {
   "files": [],
   "exclude": ["**/vite.config.ts"],
-  "references": [{ "path": "./packages/app" }]
+  "references": [{ "path": "./packages/app" }, { "path": "./packages/tslib" }]
 }
