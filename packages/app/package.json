@@ -21,6 +21,7 @@
     "tsx": "^4.7.2"
   },
   "dependencies": {
-    "@ipld/dag-json": "^10.2.0"
+    "@ipld/dag-json": "^10.2.0",
+    "@repro-testdouble-esm/lib": "1.0.0"
   }
 }

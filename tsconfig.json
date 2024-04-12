@@ -1,12 +1,5 @@
 {
-  "compilerOptions": {
-
-    "target": "ESNext",
-    "moduleResolution": "nodenext",
-    "module": "nodenext",
-    "rootDir": "src",
-    "outDir": "dist"
-  },
-  "include": ["**/src"],
-  "exclude": ["**/node_modules", "**/dist"]
+  "files": [],
+  "exclude": ["**/vite.config.ts"],
+  "references": [{ "path": "./packages/app" }]
 }
