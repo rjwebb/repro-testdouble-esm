@@ -12,7 +12,7 @@ describe("a test", () => {
     td.when(libStub.bar()).thenReturn("haha");
 
     const tslibStub = await td.replaceEsm("@repro-testdouble-esm/tslib");
-    td.when(tslibStub.bar()).thenReturn("hahaha");
+    td.when(tslibStub.qux()).thenReturn("hahaha");
   });
 
   afterEach(() => {
